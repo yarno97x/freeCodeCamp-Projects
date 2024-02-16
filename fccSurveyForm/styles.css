@@ -1,0 +1,41 @@
+
+body {
+    font-size: 15px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: aliceblue;
+}
+
+#number {
+    width: 150px;
+}
+label  {
+    display: inline;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+textarea {
+    display: block;
+    margin: auto;
+}
+input {
+    display: inline-block;
+}
+.question {
+    margin: 10px auto;
+    width: 31%;
+    text-align: left;
+    border: 5px;
+}
+p  {
+    width: 31%;
+    margin: 10px auto;
+    text-align: left;
+}
+.choices {
+    margin: auto;
+    margin-top: 10px;
+}
+button {
+    margin-top: 10px;
+}
+

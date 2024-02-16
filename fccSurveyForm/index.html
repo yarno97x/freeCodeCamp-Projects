@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">
+      <strong>Answer these questions</strong>
+    </p>
+    <form id="survey-form">
+      <div class="question">
+        <label for="name" id="name-label">Your Name</label>
+        <input
+          required
+          type="text"
+          id="name"
+          placeholder="Enter your name here"
+        />
+      </div>
+
+      <div class="question">
+        <label for="email" id="email-label">Your E-mail</label>
+        <input
+          required
+          type="email"
+          id="email"
+          placeholder="Enter your email here"
+        />
+      </div>
+      <div class="question">
+        <label for="number" id="number-label">Years of Experience</label>
+        <input
+          required
+          type="number"
+          max="10"
+          min="0"
+          id="number"
+          placeholder="Enter your experience"
+        />
+      </div>
+      <div class="question">
+        <label for="dropdown">Citizenship Status</label>
+        <select id="dropdown">
+          <option>(Select an option)</option>
+          <option value="canada">I am a Canadian citizen</option>
+          <option value="quebec">I am a Quebec citizen</option>
+          <option value="quebec">I am not a Canadian citizen</option>
+        </select>
+      </div>
+
+      <strong>What are you interested in?</strong>
+      <div class="choices">
+        <label for="choice"
+          ><input
+            type="radio"
+            value="internship"
+            name="choice"
+          />Internships</label
+        >
+        <label for="choice"
+          ><input type="radio" value="careers" name="choice" />Careers</label
+        >
+      </div>
+
+      <label for="textarea">
+        <p>Comments?</p>
+        <textarea
+          id="textarea"
+          cols="50"
+          rows="10"
+          placeholder="Enter any comments here..."
+        ></textarea>
+      </label>
+      <div class="question">
+        <input id="mail-list" value="mail-list" type="checkbox" />
+        <label for="mail-list">Subscribe to newsletter?</label>
+      </div>
+      <div class="question">
+        <input id="checked" value="checked" type="checkbox" />
+        <label for="checked">I have checked all the provided info</label>
+      </div>
+      <button id="submit" action="submit">Submit</button>
+    </form>
+  </body>
+</html>
